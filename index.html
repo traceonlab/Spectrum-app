@@ -1,2 +1,49 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Ether</title></head><body><h1>✅ LIVE</h1><p>Mini-App deployed via Termux.</p></body></html>
- 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>إيثر - الخريطة البثية</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #0a0a0a; color: #fff; padding: 20px; }
+    .header { text-align: center; margin-bottom: 30px; }
+    .station { background: #1a1a1a; border-radius: 12px; padding: 16px; margin: 12px 0; }
+    .name { font-size: 1.2em; font-weight: bold; color: #4ade80; }
+    .country { font-size: 0.9em; color: #94a3b8; }
+    .footer { text-align: center; margin-top: 40px; color: #64748b; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>📡 إيثر</h1>
+    <p>خريطة البث التلفزيوني والإذاعي العالمية — مفتوحة، حرة، محترمة</p>
+  </div>
+
+  <div class="station">
+    <div class="name">الجزيرة مباشر</div>
+    <div class="country">قطر • تلفزيون مباشر</div>
+  </div>
+
+  <div class="station">
+    <div class="name">فرانس 24 عربي</div>
+    <div class="country">فرنسا • أخبار</div>
+  </div>
+
+  <div class="station">
+    <div class="name">روتانا سينما</div>
+    <div class="country">السعودية • أفلام</div>
+  </div>
+
+  <div class="footer">
+    <p>✅ تم التحميل من Termux — لا سحابة، لا تعقب</p>
+  </div>
+
+  <script>
+    // Optional: Detect Telegram Mini App
+    if (window.Telegram?.WebApp) {
+      Telegram.WebApp.expand();
+      Telegram.WebApp.setHeaderColor('#0a0a0a');
+    }
+  </script>
+</body>
+</html>
